@@ -211,24 +211,24 @@ class GamePlayViewController: UIViewController, UIAlertViewDelegate {
         rightButton.setTitle(self.challenges?.gameOrder[counter], forState: UIControlState.Normal)
         
         
-//    
-//        while rightButton.titleLabel?.text != self.buttonOne.titleLabel?.text {
-//            
-//            
-//            self.buttonOne.titleLabel?.text = self.challenges?.gameOrder[Int(arc4random_uniform(UInt32((self.challenges?.gameOrder.count)!)))]
-//            
-//
-//            
-//        }
-//        
-//        
-//        while rightButton.titleLabel?.text != self.buttonTwo.titleLabel?.text {
-//            
-//            
-//            self.buttonTwo.titleLabel?.text = self.challenges?.gameOrder[Int(arc4random_uniform(UInt32((self.challenges?.gameOrder.count)!
-//                )))]
+    
+        while rightButton.titleLabel?.text != self.buttonOne.titleLabel?.text {
+            
+            
+            self.buttonOne.titleLabel?.text = self.challenges?.gameOrder[Int(arc4random_uniform(UInt32((self.challenges?.gameOrder.count)!)))]
+            
+
+            
+        }
         
-//        }
+        
+        while rightButton.titleLabel?.text != self.buttonTwo.titleLabel?.text {
+            
+            
+            self.buttonTwo.titleLabel?.text = self.challenges?.gameOrder[Int(arc4random_uniform(UInt32((self.challenges?.gameOrder.count)!
+                )))]
+        
+        }
         
         while rightButton.titleLabel?.text == self.buttonTwo.titleLabel?.text && rightButton.titleLabel?.text == self.buttonOne.titleLabel?.text {
             
